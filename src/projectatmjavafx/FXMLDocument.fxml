@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.textfield.CustomPasswordField?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="404.0" style="-fx-background-color: lightblue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="projectatmjavafx.FXMLDocumentController">
+   <children>
+      <Label layoutX="67.0" layoutY="14.0" prefHeight="31.0" prefWidth="271.0" text="Selamat Datang di Moklet Bank">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="103.0" layoutY="44.0" prefHeight="5.0" prefWidth="194.0" style="-fx-background-color: black;" />
+      <Label layoutX="126.0" layoutY="77.0" text="Masukkan PIN Anda">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <CustomPasswordField fx:id="editPin" layoutX="100.0" layoutY="97.0" prefHeight="66.0" prefWidth="194.0" />
+      <GridPane layoutX="86.0" layoutY="180.0" prefHeight="223.0" prefWidth="228.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="74.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="67.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="button1" onAction="#button1" prefHeight="44.0" prefWidth="69.0" style="-fx-background-color: pink;" text="1">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button3" onAction="#button3" prefHeight="48.0" prefWidth="62.0" style="-fx-background-color: pink;" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button4" onAction="#button4" prefHeight="48.0" prefWidth="69.0" style="-fx-background-color: pink;" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button5" onAction="#button5" prefHeight="44.0" prefWidth="69.0" style="-fx-background-color: pink;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button6" onAction="#button6" prefHeight="45.0" prefWidth="62.0" style="-fx-background-color: pink;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button7" onAction="#button7" prefHeight="49.0" prefWidth="70.0" style="-fx-background-color: pink;" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button8" onAction="#button8" prefHeight="48.0" prefWidth="71.0" style="-fx-background-color: pink;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button9" onAction="#button9" prefHeight="48.0" prefWidth="62.0" style="-fx-background-color: pink;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="buttonc" onAction="#buttonc" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: pink;" text="C" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button0" onAction="#button0" prefHeight="47.0" prefWidth="72.0" style="-fx-background-color: pink;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="buttonok" onAction="#buttonok" prefHeight="48.0" prefWidth="63.0" style="-fx-background-color: pink;" text="OK" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button2" onAction="#button2" prefHeight="48.0" prefWidth="69.0" style="-fx-background-color: pink;" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
